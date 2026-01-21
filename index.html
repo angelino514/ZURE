@@ -39,7 +39,6 @@
          },
       }
    </script>
-
    <style>
       .glass-nav {
          background: rgba(253, 252, 247, 0.8);
@@ -53,323 +52,333 @@
       .text-glow {
          text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       }
-   </style>
 
-   <link rel="stylesheet" href="ASS/style.css">
+      .interface {
+         width: 100vw;
+         overflow-x: hidden;
+      }
+   </style>
 </head>
 
 <body
    class="bg-background-light dark:bg-background-dark font-display text-[#0c1c1d] dark:text-[#f8fcfc] selection:bg-primary selection:text-white">
 
 
-   <!-- Top Navigation Bar -->
-   <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-primary/10">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-         <div class="flex items-center gap-3">
-            <div class="text-primary">
-               <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path clip-rule="evenodd"
-                     d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
-                     fill="currentColor" fill-rule="evenodd"></path>
-               </svg>
+   <main class="interface">
+      <!-- Top Navigation Bar -->
+      <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-primary/10">
+         <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+               <div class="text-primary">
+                  <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                     <path clip-rule="evenodd"
+                        d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                  </svg>
+               </div>
+               <h2 class="text-xl font-extrabold tracking-tight uppercase">Luxury Travel</h2>
             </div>
-            <h2 class="text-xl font-extrabold tracking-tight uppercase">Luxury Travel</h2>
-         </div>
-         <nav class="hidden md:flex items-center gap-10">
-            <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-               href="#">Destinos</a>
-            <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-               href="#">Experiências</a>
-            <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-               href="#">Sobre Nós</a>
-            <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-               href="#">Contato</a>
-         </nav>
-         <div class="flex items-center gap-6">
-            <button
-               class="hidden sm:flex bg-primary text-white hover:bg-primary/90 transition-all px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-wider">
-               Reservar Agora
-            </button>
-            <div class="size-10 rounded-full border-2 border-primary/20 bg-cover bg-center"
-               data-alt="User profile avatar"
-               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPP2IKvhfr2RIS9CSlLJn0fp0gQqVtX2NyZo0jirUY-sSdQ8AvgYL-HRVBMfie2T08oUbU1XNjNb_QPY4jtPFQhIHc7eJUKF6cBCSAAUJ9oK5QnEis6QZUAsS4n3UGts6cA50dFi8Z9iyjW-GV483TD8jXbe40iI55MrYho7BTJw_dImwa_PJiHfxlDvfe9W7z4WdwMt-jFXn3m2gYvpUT1s6D03y0NiR-q7uKWnW807iYoPkB26nQ7PrLf4GJZm3pm_falhMFIPAt");'>
-            </div>
-         </div>
-      </div>
-   </header>
-
-
-
-   <!-- Hero Section -->
-   <section class="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 z-0">
-         <div class="absolute inset-0 bg-black/30 z-10"></div>
-         <!-- Video Placeholder: Using a high-res image that represents a cinematic tropical scene -->
-         <div class="w-full h-full bg-cover bg-center"
-            data-alt="Cinematic aerial view of turquoise ocean and tropical island"
-            style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3CxJ_8nI2Db3DzlLNotLSkv-gfePAB2o6qsZRwNsvAWX2Coi5lQbK9iZ0-gBn_6kkB8MNaqwGRZGvxiK3PQ_GhxoWWu_wghw8CL00IIGavYN9z9YwRPW7SwC8Nwk_WYPuF6oeI46Q6QHHiVwj1aYx22hKYSyDpMS9RwTevIMHvGULbq5SqGzlDVCmV73hnuzYKEZMdkUVLUtIKadv-OLDel8FM3DT4SAykmYptVGXKb7awHVqsSDWNphNGh3ZuqxO6wd0zaJaSiX4");'>
-         </div>
-      </div>
-      <div class="relative z-20 text-center px-6 max-w-4xl">
-         <h1
-            class="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-glow mb-8">
-            Explore o <br /><span class="text-primary italic font-light">Extraordinário</span>
-         </h1>
-         <p class="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
-            Curadoria de viagens exclusivas para almas aventureiras e sofisticadas que buscam o inesquecível.
-         </p>
-         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-               class="bg-primary text-white hover:scale-105 transition-transform px-10 py-5 rounded-xl font-bold text-base shadow-2xl shadow-primary/40">
-               Comece Sua Jornada
-            </button>
-            <button
-               class="bg-white/10 backdrop-blur-md text-white border border-white/30 hover:bg-white/20 transition-all px-10 py-5 rounded-xl font-bold text-base">
-               Ver Destinos
-            </button>
-         </div>
-      </div>
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-         <span class="material-symbols-outlined text-white text-3xl">keyboard_double_arrow_down</span>
-      </div>
-   </section>
-   <!-- Destinos em Destaque -->
-   <section class="py-24 bg-background-light dark:bg-background-dark">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10">
-         <div class="flex items-end justify-between mb-12">
-            <div class="max-w-xl">
-               <h6 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Coleções Selecionadas</h6>
-               <h2 class="text-4xl md:text-5xl font-black tracking-tight">Destinos em Destaque</h2>
-            </div>
-            <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm"
-               href="#">
-               Explorar tudo <span class="material-symbols-outlined">arrow_right_alt</span>
-            </a>
-         </div>
-         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
-               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  data-alt="Luxury overwater bungalow in Maldives"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeBdwQPC8IPuZsR5RMuiwZUfnVhpdOh7rf-HWp9aE2v6BZ4fIm-O7tNUV8EWrC_jzEDB0rOP7TyMj1OCRGcRJsT8Owpjp67O8fXkkiSxZAo2bed6CgHB1Gd1Pw4VP6vkYFYphOTU8WIxTyGyXb4nrBabLymJ-As_dFJGx9JGKE8_WLT6uApvNMVQE4YEbescJZ_079pgHvkoriKgvX-KroRhuQY81bwb_IRDbXaf9W25nxtMr3EjNAC-yMiGGDVI8qrXSJdGw8evGQ");'>
-               </div>
-               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-               <div class="absolute top-6 left-6">
-                  <span
-                     class="bg-accent text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Exclusivo</span>
-               </div>
-               <div class="absolute bottom-8 left-8 right-8">
-                  <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Island Paradise</p>
-                  <h3 class="text-white text-2xl font-black tracking-tight">Maldivas</h3>
-               </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
-               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  data-alt="Stunning mountain peak in Patagonia"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsHdyqMBU76LzeLFJ_zNJ2LmeM4jrNTzyvRGdMhBRfooxsjN_MI3o00wycNeozugtS4_qWQs7oZPfa3NvWI6U-rHfJUgDLBtfJFeNzuky7JaNmq5XcXO1sGtE7ONHxGtDN8r4J4zcbjVHQ1h5dRs2sQd-95O6xzME782w110fzHRhWCzmKEZgc9wdDV4YBh_uhbrcMGrVikuSHq4mlp0zvzqkaI1YxYVTjGt9blk_qqtrNE-Y2QOabSuJfEBxY908oCoj19x86VRYA");'>
-               </div>
-               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-               <div class="absolute bottom-8 left-8 right-8">
-                  <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Mountain Majesty</p>
-                  <h3 class="text-white text-2xl font-black tracking-tight">Patagônia</h3>
-               </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
-               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  data-alt="Sunset safari scene in Serengeti"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnVNKctpaQ1ha0Z8v1bvZGaw3tzesSWLvtGo6TJVz7zbQAX45Rgv_1VQTxMCC1w8Lm0ONB9pJ3gbOZcHJHlJ2re9cQaUnRqFpqAuJK2HguBl-Tz4EpMevcwWckEBij9PmH5oReDaXLBRd8VKG_I_gSmiymOUZ7iyppvlgPT35rAy6Y8ZHDMCmWjUaoIEXBwR5SOgzUdLk9qb5aDmZevd_j1Lz3r8nwOCFs0PXqJ9Wwwdi6Rf8DL50Lph9N_CE8scCt9PFunlhta4Hr");'>
-               </div>
-               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-               <div class="absolute bottom-8 left-8 right-8">
-                  <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Wild Adventure</p>
-                  <h3 class="text-white text-2xl font-black tracking-tight">Serengeti</h3>
+            <nav class="hidden md:flex items-center gap-10">
+               <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+                  href="#">Destinos</a>
+               <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+                  href="#">Experiências</a>
+               <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+                  href="#">Sobre Nós</a>
+               <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+                  href="#">Contato</a>
+            </nav>
+            <div class="flex items-center gap-6">
+               <button
+                  class="hidden sm:flex bg-primary text-white hover:bg-primary/90 transition-all px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-wider">
+                  Reservar Agora
+               </button>
+               <div class="size-10 rounded-full border-2 border-primary/20 bg-cover bg-center"
+                  data-alt="User profile avatar"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPP2IKvhfr2RIS9CSlLJn0fp0gQqVtX2NyZo0jirUY-sSdQ8AvgYL-HRVBMfie2T08oUbU1XNjNb_QPY4jtPFQhIHc7eJUKF6cBCSAAUJ9oK5QnEis6QZUAsS4n3UGts6cA50dFi8Z9iyjW-GV483TD8jXbe40iI55MrYho7BTJw_dImwa_PJiHfxlDvfe9W7z4WdwMt-jFXn3m2gYvpUT1s6D03y0NiR-q7uKWnW807iYoPkB26nQ7PrLf4GJZm3pm_falhMFIPAt");'>
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   <!-- Feature Section: Por que viajar conosco? -->
-   <section class="py-24 bg-[#f0ede4] dark:bg-[#1a2329] relative overflow-hidden">
-      <!-- Subtle Map Pattern Background Texture -->
-      <div class="absolute inset-0 opacity-5 pointer-events-none"
-         style="background-image: radial-gradient(#006b70 1px, transparent 1px); background-size: 30px 30px;"></div>
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
-         <div class="flex flex-col lg:flex-row gap-16 items-start">
-            <div class="lg:w-1/3">
-               <h6 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Diferencial</h6>
-               <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6">Por que viajar conosco?</h2>
-               <p class="text-lg text-[#0c1c1d]/70 dark:text-[#f8fcfc]/70 leading-relaxed mb-8">
-                  Oferecemos uma abordagem única para garantir que cada jornada seja inesquecível, luxuosa e totalmente
-                  alinhada ao seu estilo de vida.
-               </p>
-               <button class="group flex items-center gap-4 font-bold text-primary text-sm uppercase tracking-widest">
-                  Nossa Filosofia
-                  <span
-                     class="size-10 rounded-full border border-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
-                     <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
+      </header>
+      <!-- Hero Section -->
+      <section class="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+         <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/30 z-10"></div>
+            <!-- Video Placeholder: Using a high-res image that represents a cinematic tropical scene -->
+            <div class="w-full h-full bg-cover bg-center"
+               data-alt="Cinematic aerial view of turquoise ocean and tropical island"
+               style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3CxJ_8nI2Db3DzlLNotLSkv-gfePAB2o6qsZRwNsvAWX2Coi5lQbK9iZ0-gBn_6kkB8MNaqwGRZGvxiK3PQ_GhxoWWu_wghw8CL00IIGavYN9z9YwRPW7SwC8Nwk_WYPuF6oeI46Q6QHHiVwj1aYx22hKYSyDpMS9RwTevIMHvGULbq5SqGzlDVCmV73hnuzYKEZMdkUVLUtIKadv-OLDel8FM3DT4SAykmYptVGXKb7awHVqsSDWNphNGh3ZuqxO6wd0zaJaSiX4");'>
+            </div>
+         </div>
+         <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1
+               class="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-glow mb-8">
+               Explore o <br /><span class="text-primary italic font-light">Extraordinário</span>
+            </h1>
+            <p class="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+               Curadoria de viagens exclusivas para almas aventureiras e sofisticadas que buscam o inesquecível.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+               <button
+                  class="bg-primary text-white hover:scale-105 transition-transform px-10 py-5 rounded-xl font-bold text-base shadow-2xl shadow-primary/40">
+                  Comece Sua Jornada
+               </button>
+               <button
+                  class="bg-white/10 backdrop-blur-md text-white border border-white/30 hover:bg-white/20 transition-all px-10 py-5 rounded-xl font-bold text-base">
+                  Ver Destinos
                </button>
             </div>
-            <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
-               <!-- Feature 1 -->
-               <div
-                  class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
-                  <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
-                     <span class="material-symbols-outlined text-3xl">map</span>
-                  </div>
-                  <h3 class="text-xl font-bold mb-3">Itinerários Personalizados</h3>
-                  <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-normal">
-                     Viagens moldadas inteiramente ao seu gosto pessoal e ritmo.
-                  </p>
+         </div>
+         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+            <span class="material-symbols-outlined text-white text-3xl">keyboard_double_arrow_down</span>
+         </div>
+      </section>
+      <!-- Destinos em Destaque -->
+      <section class="py-24 bg-background-light dark:bg-background-dark">
+         <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex items-end justify-between mb-12">
+               <div class="max-w-xl">
+                  <h6 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Coleções Selecionadas</h6>
+                  <h2 class="text-4xl md:text-5xl font-black tracking-tight">Destinos em Destaque</h2>
                </div>
-               <!-- Feature 2 -->
-               <div
-                  class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
-                  <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
-                     <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+               <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm"
+                  href="#">
+                  Explorar tudo <span class="material-symbols-outlined">arrow_right_alt</span>
+               </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+               <!-- Card 1 -->
+               <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
+                  <div
+                     class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                     data-alt="Luxury overwater bungalow in Maldives"
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeBdwQPC8IPuZsR5RMuiwZUfnVhpdOh7rf-HWp9aE2v6BZ4fIm-O7tNUV8EWrC_jzEDB0rOP7TyMj1OCRGcRJsT8Owpjp67O8fXkkiSxZAo2bed6CgHB1Gd1Pw4VP6vkYFYphOTU8WIxTyGyXb4nrBabLymJ-As_dFJGx9JGKE8_WLT6uApvNMVQE4YEbescJZ_079pgHvkoriKgvX-KroRhuQY81bwb_IRDbXaf9W25nxtMr3EjNAC-yMiGGDVI8qrXSJdGw8evGQ");'>
                   </div>
-                  <h3 class="text-xl font-bold mb-3">Acesso Privilegiado</h3>
-                  <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-normal">
-                     Experiências exclusivas que você não encontrará em nenhum outro lugar.
-                  </p>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div class="absolute top-6 left-6">
+                     <span
+                        class="bg-accent text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Exclusivo</span>
+                  </div>
+                  <div class="absolute bottom-8 left-8 right-8">
+                     <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Island Paradise</p>
+                     <h3 class="text-white text-2xl font-black tracking-tight">Maldivas</h3>
+                  </div>
                </div>
-               <!-- Feature 3 -->
-               <div
-                  class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
-                  <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
-                     <span class="material-symbols-outlined text-3xl">support_agent</span>
+               <!-- Card 2 -->
+               <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
+                  <div
+                     class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                     data-alt="Stunning mountain peak in Patagonia"
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsHdyqMBU76LzeLFJ_zNJ2LmeM4jrNTzyvRGdMhBRfooxsjN_MI3o00wycNeozugtS4_qWQs7oZPfa3NvWI6U-rHfJUgDLBtfJFeNzuky7JaNmq5XcXO1sGtE7ONHxGtDN8r4J4zcbjVHQ1h5dRs2sQd-95O6xzME782w110fzHRhWCzmKEZgc9wdDV4YBh_uhbrcMGrVikuSHq4mlp0zvzqkaI1YxYVTjGt9blk_qqtrNE-Y2QOabSuJfEBxY908oCoj19x86VRYA");'>
                   </div>
-                  <h3 class="text-xl font-bold mb-3">Suporte 24/7</h3>
-                  <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-normal">
-                     Nossa equipe está à disposição em qualquer fuso horário para sua paz de espírito.
-                  </p>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-8 left-8 right-8">
+                     <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Mountain Majesty</p>
+                     <h3 class="text-white text-2xl font-black tracking-tight">Patagônia</h3>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
+                  <div
+                     class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                     data-alt="Sunset safari scene in Serengeti"
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnVNKctpaQ1ha0Z8v1bvZGaw3tzesSWLvtGo6TJVz7zbQAX45Rgv_1VQTxMCC1w8Lm0ONB9pJ3gbOZcHJHlJ2re9cQaUnRqFpqAuJK2HguBl-Tz4EpMevcwWckEBij9PmH5oReDaXLBRd8VKG_I_gSmiymOUZ7iyppvlgPT35rAy6Y8ZHDMCmWjUaoIEXBwR5SOgzUdLk9qb5aDmZevd_j1Lz3r8nwOCFs0PXqJ9Wwwdi6Rf8DL50Lph9N_CE8scCt9PFunlhta4Hr");'>
+                  </div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-8 left-8 right-8">
+                     <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Wild Adventure</p>
+                     <h3 class="text-white text-2xl font-black tracking-tight">Serengeti</h3>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   <!-- Curated Journey Section -->
-   <section class="py-24">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10">
-         <div class="bg-primary text-white rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
-            <div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
-               <span
-                  class="bg-accent text-white text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full w-fit mb-8">Especial
-                  de Temporada</span>
-               <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8">Uma jornada pela Toscana</h2>
-               <p class="text-white/80 text-lg leading-relaxed mb-10">
-                  Descubra os segredos da Itália em uma experiência de 14 dias com guias historiadores privados,
-                  jantares em vinhedos exclusivos e hospedagem em castelos medievais.
-               </p>
-               <div class="flex items-center gap-4">
+      </section>
+      <!-- Feature Section: Por que viajar conosco? -->
+      <section class="py-24 bg-[#f0ede4] dark:bg-[#1a2329] relative overflow-hidden">
+         <!-- Subtle Map Pattern Background Texture -->
+         <div class="absolute inset-0 opacity-5 pointer-events-none"
+            style="background-image: radial-gradient(#006b70 1px, transparent 1px); background-size: 30px 30px;"></div>
+         <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+               <div class="lg:w-1/3">
+                  <h6 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Diferencial</h6>
+                  <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6">Por que viajar conosco?</h2>
+                  <p class="text-lg text-[#0c1c1d]/70 dark:text-[#f8fcfc]/70 leading-relaxed mb-8">
+                     Oferecemos uma abordagem única para garantir que cada jornada seja inesquecível, luxuosa e
+                     totalmente
+                     alinhada ao seu estilo de vida.
+                  </p>
                   <button
-                     class="bg-white text-primary px-10 py-5 rounded-xl font-bold text-base hover:bg-white/90 transition-all">Ver
-                     Detalhes</button>
-                  <div class="text-sm font-bold uppercase tracking-widest border-b-2 border-accent pb-1">Preços Sob
-                     Consulta</div>
+                     class="group flex items-center gap-4 font-bold text-primary text-sm uppercase tracking-widest">
+                     Nossa Filosofia
+                     <span
+                        class="size-10 rounded-full border border-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                     </span>
+                  </button>
+               </div>
+               <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <!-- Feature 1 -->
+                  <div
+                     class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
+                     <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-3xl">map</span>
+                     </div>
+                     <h3 class="text-xl font-bold mb-3">Itinerários Personalizados</h3>
+                     <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-normal">
+                        Viagens moldadas inteiramente ao seu gosto pessoal e ritmo.
+                     </p>
+                  </div>
+                  <!-- Feature 2 -->
+                  <div
+                     class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
+                     <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+                     </div>
+                     <h3 class="text-xl font-bold mb-3">Acesso Privilegiado</h3>
+                     <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-normal">
+                        Experiências exclusivas que você não encontrará em nenhum outro lugar.
+                     </p>
+                  </div>
+                  <!-- Feature 3 -->
+                  <div
+                     class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
+                     <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-3xl">support_agent</span>
+                     </div>
+                     <h3 class="text-xl font-bold mb-3">Suporte 24/7</h3>
+                     <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-normal">
+                        Nossa equipe está à disposição em qualquer fuso horário para sua paz de espírito.
+                     </p>
+                  </div>
                </div>
             </div>
-            <div class="md:w-1/2 min-h-[400px] bg-cover bg-center" data-alt="Scenic vineyard in Tuscany at golden hour"
-               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsGfBMtrZ0WX-EEdTjaQTv5UdQeIOvFyk4GoYhb55VUyI3piy4ekCKjBMVfT49rutNn5f4K1r47EZyP2wAoIiHqbPphUbyzSsunL_AOKorIFszkm7ijJAZRLi3iXtzndz81pfaOpbYQyb9w3MwS208IfOA24rriw8KeIimacP6S8MXShaLBCrBkUCLD_uG-GfYx4EqUgqVxDh2XjyvaLw9VmcvPBIc-H5SZIgzM4rCqbf9S-moMsxljcTN2eO9ejDFcdx8D9hl2jJD");'>
-            </div>
          </div>
-      </div>
-   </section>
-   <!-- Testimonial Section -->
-   <section class="py-24 bg-background-light dark:bg-background-dark border-y border-primary/5">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-         <span class="material-symbols-outlined text-primary text-5xl mb-8 opacity-50">format_quote</span>
-         <p
-            class="text-2xl md:text-3xl font-light italic leading-relaxed text-[#0c1c1d]/90 dark:text-[#f8fcfc]/90 mb-10">
-            "Não foi apenas uma viagem, foi uma transformação. A atenção aos detalhes e o acesso a lugares que eu nem
-            sabia que existiam fizeram desta a melhor experiência da nossa vida."
-         </p>
-         <div>
-            <h5 class="font-bold text-lg">Marco Aurélio Santos</h5>
-            <p class="text-primary text-sm uppercase tracking-widest font-semibold">Cliente Gold</p>
-         </div>
-      </div>
-   </section>
-   <!-- Footer / Newsletter -->
-   <footer class="bg-[#F7F5EE] dark:bg-[#0c1114] py-20">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10">
-         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center border-b border-primary/10 pb-20">
-            <div>
-               <h3 class="text-3xl font-black tracking-tight mb-4">Inscreva-se na nossa Gazette</h3>
-               <p class="text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 text-lg">Receba curadorias mensais sobre os destinos
-                  mais exclusivos do mundo.</p>
-            </div>
-            <div class="flex gap-4">
-               <input
-                  class="flex-1 bg-white dark:bg-background-dark border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary"
-                  placeholder="Seu e-mail profissional" type="email" />
-               <button
-                  class="bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-primary/90 transition-all uppercase tracking-widest text-sm">Assinar</button>
-            </div>
-         </div>
-         <div class="grid grid-cols-2 md:grid-cols-4 gap-12 pt-20">
-            <div class="col-span-2 md:col-span-1">
-               <div class="flex items-center gap-3 text-primary mb-6">
-                  <svg class="size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                     <path
-                        d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
-                        fill="currentColor"></path>
-                  </svg>
-                  <span class="text-lg font-black tracking-tight text-[#0c1c1d] dark:text-white">LUXURY TRAVEL</span>
+      </section>
+      <!-- Curated Journey Section -->
+      <section class="py-24">
+         <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="bg-primary text-white rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
+               <div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+                  <span
+                     class="bg-accent text-white text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full w-fit mb-8">Especial
+                     de Temporada</span>
+                  <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8">Uma jornada pela Toscana</h2>
+                  <p class="text-white/80 text-lg leading-relaxed mb-10">
+                     Descubra os segredos da Itália em uma experiência de 14 dias com guias historiadores privados,
+                     jantares em vinhedos exclusivos e hospedagem em castelos medievais.
+                  </p>
+                  <div class="flex items-center gap-4">
+                     <button
+                        class="bg-white text-primary px-10 py-5 rounded-xl font-bold text-base hover:bg-white/90 transition-all">Ver
+                        Detalhes</button>
+                     <div class="text-sm font-bold uppercase tracking-widest border-b-2 border-accent pb-1">Preços Sob
+                        Consulta</div>
+                  </div>
                </div>
-               <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-relaxed">
-                  Redefinindo o significado de luxo através de experiências autênticas e conexão verdadeira com o mundo.
-               </p>
+               <div class="md:w-1/2 min-h-[400px] bg-cover bg-center"
+                  data-alt="Scenic vineyard in Tuscany at golden hour"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsGfBMtrZ0WX-EEdTjaQTv5UdQeIOvFyk4GoYhb55VUyI3piy4ekCKjBMVfT49rutNn5f4K1r47EZyP2wAoIiHqbPphUbyzSsunL_AOKorIFszkm7ijJAZRLi3iXtzndz81pfaOpbYQyb9w3MwS208IfOA24rriw8KeIimacP6S8MXShaLBCrBkUCLD_uG-GfYx4EqUgqVxDh2XjyvaLw9VmcvPBIc-H5SZIgzM4rCqbf9S-moMsxljcTN2eO9ejDFcdx8D9hl2jJD");'>
+               </div>
             </div>
+         </div>
+      </section>
+      <!-- Testimonial Section -->
+      <section class="py-24 bg-background-light dark:bg-background-dark border-y border-primary/5">
+         <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="material-symbols-outlined text-primary text-5xl mb-8 opacity-50">format_quote</span>
+            <p
+               class="text-2xl md:text-3xl font-light italic leading-relaxed text-[#0c1c1d]/90 dark:text-[#f8fcfc]/90 mb-10">
+               "Não foi apenas uma viagem, foi uma transformação. A atenção aos detalhes e o acesso a lugares que eu nem
+               sabia que existiam fizeram desta a melhor experiência da nossa vida."
+            </p>
             <div>
-               <h4 class="font-bold uppercase tracking-widest text-xs mb-6 text-primary">Explorar</h4>
-               <ul class="space-y-4 text-sm font-medium opacity-80">
-                  <li><a class="hover:text-primary transition-colors" href="#">Destinos</a></li>
-                  <li><a class="hover:text-primary transition-colors" href="#">Cruzeiros</a></li>
-                  <li><a class="hover:text-primary transition-colors" href="#">Vilas Privadas</a></li>
-                  <li><a class="hover:text-primary transition-colors" href="#">Expedições</a></li>
-               </ul>
+               <h5 class="font-bold text-lg">Marco Aurélio Santos</h5>
+               <p class="text-primary text-sm uppercase tracking-widest font-semibold">Cliente Gold</p>
             </div>
-            <div>
-               <h4 class="font-bold uppercase tracking-widest text-xs mb-6 text-primary">Agência</h4>
-               <ul class="space-y-4 text-sm font-medium opacity-80">
-                  <li><a class="hover:text-primary transition-colors" href="#">Sobre Nós</a></li>
-                  <li><a class="hover:text-primary transition-colors" href="#">Nossa Equipe</a></li>
-                  <li><a class="hover:text-primary transition-colors" href="#">Carreiras</a></li>
-                  <li><a class="hover:text-primary transition-colors" href="#">Media Kit</a></li>
-               </ul>
-            </div>
-            <div>
-               <h4 class="font-bold uppercase tracking-widest text-xs mb-6 text-primary">Siga-nos</h4>
+         </div>
+      </section>
+      <!-- Footer / Newsletter -->
+      <footer class="bg-[#F7F5EE] dark:bg-[#0c1114] py-20">
+         <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center border-b border-primary/10 pb-20">
+               <div>
+                  <h3 class="text-3xl font-black tracking-tight mb-4">Inscreva-se na nossa Gazette</h3>
+                  <p class="text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 text-lg">Receba curadorias mensais sobre os
+                     destinos
+                     mais exclusivos do mundo.</p>
+               </div>
                <div class="flex gap-4">
-                  <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                     href="#">
-                     <i class="material-symbols-outlined text-lg">public</i>
-                  </a>
-                  <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                     href="#">
-                     <i class="material-symbols-outlined text-lg">photo_camera</i>
-                  </a>
-                  <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                     href="#">
-                     <i class="material-symbols-outlined text-lg">movie</i>
-                  </a>
+                  <input
+                     class="flex-1 bg-white dark:bg-background-dark border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary"
+                     placeholder="Seu e-mail profissional" type="email" />
+                  <button
+                     class="bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-primary/90 transition-all uppercase tracking-widest text-sm">Assinar</button>
+               </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 pt-20">
+               <div class="col-span-2 md:col-span-1">
+                  <div class="flex items-center gap-3 text-primary mb-6">
+                     <svg class="size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                           fill="currentColor"></path>
+                     </svg>
+                     <span class="text-lg font-black tracking-tight text-[#0c1c1d] dark:text-white">LUXURY TRAVEL</span>
+                  </div>
+                  <p class="text-sm text-[#0c1c1d]/60 dark:text-[#f8fcfc]/60 leading-relaxed">
+                     Redefinindo o significado de luxo através de experiências autênticas e conexão verdadeira com o
+                     mundo.
+                  </p>
+               </div>
+               <div>
+                  <h4 class="font-bold uppercase tracking-widest text-xs mb-6 text-primary">Explorar</h4>
+                  <ul class="space-y-4 text-sm font-medium opacity-80">
+                     <li><a class="hover:text-primary transition-colors" href="#">Destinos</a></li>
+                     <li><a class="hover:text-primary transition-colors" href="#">Cruzeiros</a></li>
+                     <li><a class="hover:text-primary transition-colors" href="#">Vilas Privadas</a></li>
+                     <li><a class="hover:text-primary transition-colors" href="#">Expedições</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <h4 class="font-bold uppercase tracking-widest text-xs mb-6 text-primary">Agência</h4>
+                  <ul class="space-y-4 text-sm font-medium opacity-80">
+                     <li><a class="hover:text-primary transition-colors" href="#">Sobre Nós</a></li>
+                     <li><a class="hover:text-primary transition-colors" href="#">Nossa Equipe</a></li>
+                     <li><a class="hover:text-primary transition-colors" href="#">Carreiras</a></li>
+                     <li><a class="hover:text-primary transition-colors" href="#">Media Kit</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <h4 class="font-bold uppercase tracking-widest text-xs mb-6 text-primary">Siga-nos</h4>
+                  <div class="flex gap-4">
+                     <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                        href="#">
+                        <i class="material-symbols-outlined text-lg">public</i>
+                     </a>
+                     <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                        href="#">
+                        <i class="material-symbols-outlined text-lg">photo_camera</i>
+                     </a>
+                     <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                        href="#">
+                        <i class="material-symbols-outlined text-lg">movie</i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div
+               class="mt-20 pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
+               <p>© 2024 LUXURY TRAVEL AGENCY. TODOS OS DIREITOS RESERVADOS.</p>
+               <div class="flex gap-8">
+                  <a href="#">Privacidade</a>
+                  <a href="#">Termos de Uso</a>
+                  <a href="#">Cookies</a>
                </div>
             </div>
          </div>
-         <div
-            class="mt-20 pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
-            <p>© 2024 LUXURY TRAVEL AGENCY. TODOS OS DIREITOS RESERVADOS.</p>
-            <div class="flex gap-8">
-               <a href="#">Privacidade</a>
-               <a href="#">Termos de Uso</a>
-               <a href="#">Cookies</a>
-            </div>
-         </div>
-      </div>
-   </footer>
+      </footer>
+   </main>
 </body>
 
 </html>
