@@ -41,12 +41,6 @@
    </script>
 
    <style>
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
       .glass-nav {
          background: rgba(253, 252, 247, 0.8);
          backdrop-filter: blur(12px);
@@ -59,36 +53,29 @@
       .text-glow {
          text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       }
-
-
-      html {
-         width: 100%;
-         overflow-x: hidden;
-      }
    </style>
+
+   <link rel="stylesheet" href="ASS/style.css">
 </head>
 
 <body
-   class="w-[100%] bg-background-light dark:bg-background-dark font-display text-[#0c1c1d] dark:text-[#f8fcfc] selection:bg-primary selection:text-white">
+   class="bg-background-light dark:bg-background-dark font-display text-[#0c1c1d] dark:text-[#f8fcfc] selection:bg-primary selection:text-white">
 
 
-   <!--  header contendo os items do meu navbar -->
-   <header class="fixed w-[100%] py-2 top-0 z-50 glass-nav border-b border-primary/10">
-
-      <div class="w-[95%] max-w-[1600px] mx-auto flex items-center justify-between">
-
-         <div class="w-[50%] md:w-[20%] flex items-center gap-1">
-            <div class="text-primary flex items-center">
+   <!-- Top Navigation Bar -->
+   <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-primary/10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+         <div class="flex items-center gap-3">
+            <div class="text-primary">
                <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                   <path clip-rule="evenodd"
                      d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
                      fill="currentColor" fill-rule="evenodd"></path>
                </svg>
             </div>
-            <h2 class="text-xl font-extrabold tracking-tight uppercase"> WURE </h2>
+            <h2 class="text-xl font-extrabold tracking-tight uppercase">Luxury Travel</h2>
          </div>
-
-         <nav class="hidden md:w-[60%] md:bg-red-500 md:flex items-center justify-center gap-10">
+         <nav class="hidden md:flex items-center gap-10">
             <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
                href="#">Destinos</a>
             <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
@@ -98,31 +85,32 @@
             <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
                href="#">Contato</a>
          </nav>
-
-         <div class="w-[50%] md:w-[20%] flex items-center justify-end gap-6">
+         <div class="flex items-center gap-6">
             <button
-               class="sm:flex bg-primary text-white hover:bg-primary/90 transition-all px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-wider">
+               class="hidden sm:flex bg-primary text-white hover:bg-primary/90 transition-all px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-wider">
                Reservar Agora
             </button>
+            <div class="size-10 rounded-full border-2 border-primary/20 bg-cover bg-center"
+               data-alt="User profile avatar"
+               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPP2IKvhfr2RIS9CSlLJn0fp0gQqVtX2NyZo0jirUY-sSdQ8AvgYL-HRVBMfie2T08oUbU1XNjNb_QPY4jtPFQhIHc7eJUKF6cBCSAAUJ9oK5QnEis6QZUAsS4n3UGts6cA50dFi8Z9iyjW-GV483TD8jXbe40iI55MrYho7BTJw_dImwa_PJiHfxlDvfe9W7z4WdwMt-jFXn3m2gYvpUT1s6D03y0NiR-q7uKWnW807iYoPkB26nQ7PrLf4GJZm3pm_falhMFIPAt");'>
+            </div>
          </div>
       </div>
-
    </header>
-   <!-- terminou o header -->
+
 
 
    <!-- Hero Section -->
-
-   <section class="w-full border-indingo-500 relative h-screen min-h-[700px] flex items-center justify-center">
-      <div class="w-[100%] absolute inset-0 z-0">
-         <div class="w-[100%] absolute inset-0 bg-black/30 z-10"></div>
+   <section class="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+         <div class="absolute inset-0 bg-black/30 z-10"></div>
          <!-- Video Placeholder: Using a high-res image that represents a cinematic tropical scene -->
-         <div class="w-[100%] h-full bg-cover bg-center"
+         <div class="w-full h-full bg-cover bg-center"
             data-alt="Cinematic aerial view of turquoise ocean and tropical island"
             style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3CxJ_8nI2Db3DzlLNotLSkv-gfePAB2o6qsZRwNsvAWX2Coi5lQbK9iZ0-gBn_6kkB8MNaqwGRZGvxiK3PQ_GhxoWWu_wghw8CL00IIGavYN9z9YwRPW7SwC8Nwk_WYPuF6oeI46Q6QHHiVwj1aYx22hKYSyDpMS9RwTevIMHvGULbq5SqGzlDVCmV73hnuzYKEZMdkUVLUtIKadv-OLDel8FM3DT4SAykmYptVGXKb7awHVqsSDWNphNGh3ZuqxO6wd0zaJaSiX4");'>
          </div>
       </div>
-      <div class="relative z-20 text-center max-w-4xl">
+      <div class="relative z-20 text-center px-6 max-w-4xl">
          <h1
             class="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-glow mb-8">
             Explore o <br /><span class="text-primary italic font-light">Extraordinário</span>
@@ -145,12 +133,9 @@
          <span class="material-symbols-outlined text-white text-3xl">keyboard_double_arrow_down</span>
       </div>
    </section>
-
-
    <!-- Destinos em Destaque -->
-   <section class="w-full bg-background-light dark:bg-background-dark">
-      <div class="w-[95%] py-4 max-w-7xl mx-auto  lg:px-10">
-
+   <section class="py-24 bg-background-light dark:bg-background-dark">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
          <div class="flex items-end justify-between mb-12">
             <div class="max-w-xl">
                <h6 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Coleções Selecionadas</h6>
@@ -161,9 +146,7 @@
                Explorar tudo <span class="material-symbols-outlined">arrow_right_alt</span>
             </a>
          </div>
-
-
-         <div class="w-[100%] grid grid-cols-1 md:grid-cols-3 gap-8">
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
@@ -173,15 +156,13 @@
                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                <div class="absolute top-6 left-6">
                   <span
-                     class="bg-accent text-white text-[10px] font-black uppercase tracking-widest rounded-full">Exclusivo</span>
+                     class="bg-accent text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Exclusivo</span>
                </div>
                <div class="absolute bottom-8 left-8 right-8">
                   <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Island Paradise</p>
                   <h3 class="text-white text-2xl font-black tracking-tight">Maldivas</h3>
                </div>
             </div>
-
-
             <!-- Card 2 -->
             <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
@@ -194,8 +175,6 @@
                   <h3 class="text-white text-2xl font-black tracking-tight">Patagônia</h3>
                </div>
             </div>
-
-
             <!-- Card 3 -->
             <div class="group relative overflow-hidden rounded-xl aspect-[3/4]">
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
@@ -208,24 +187,15 @@
                   <h3 class="text-white text-2xl font-black tracking-tight">Serengeti</h3>
                </div>
             </div>
-
-
          </div>
       </div>
    </section>
-
-
-
-
    <!-- Feature Section: Por que viajar conosco? -->
-   <section class="w-[95%] m-auto py-24 bg-[#f0ede4] dark:bg-[#1a2329] relative overflow-hidden">
-
-
+   <section class="py-24 bg-[#f0ede4] dark:bg-[#1a2329] relative overflow-hidden">
       <!-- Subtle Map Pattern Background Texture -->
-      <div class="w-[100%] absolute inset-0 opacity-5 pointer-events-none"
+      <div class="absolute inset-0 opacity-5 pointer-events-none"
          style="background-image: radial-gradient(#006b70 1px, transparent 1px); background-size: 30px 30px;"></div>
-
-      <div class="w-[100%] max-w-[1600px] mx-auto  lg:px-10 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
          <div class="flex flex-col lg:flex-row gap-16 items-start">
             <div class="lg:w-1/3">
                <h6 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Diferencial</h6>
@@ -268,7 +238,7 @@
                <!-- Feature 3 -->
                <div
                   class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/10 hover:shadow-xl transition-all">
-                  <div class="bg-primary/10 text-primary size-14 p-8 rounded-lg flex items-center justify-center mb-6">
+                  <div class="bg-primary/10 text-primary size-14 rounded-lg flex items-center justify-center mb-6">
                      <span class="material-symbols-outlined text-3xl">support_agent</span>
                   </div>
                   <h3 class="text-xl font-bold mb-3">Suporte 24/7</h3>
@@ -280,13 +250,10 @@
          </div>
       </div>
    </section>
-
-
    <!-- Curated Journey Section -->
-   <section class="w-[100%] py-24">
-
-      <div  class=" w-[100%] max-w-[1600px] mx-auto lg:px-10">
-         <div class="w-[100%] bg-primary text-white rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
+   <section class="py-24">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+         <div class="bg-primary text-white rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
             <div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
                <span
                   class="bg-accent text-white text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full w-fit mb-8">Especial
@@ -298,7 +265,7 @@
                </p>
                <div class="flex items-center gap-4">
                   <button
-                     class="bg-white text-primary  py-5 rounded-xl font-bold text-base hover:bg-white/90 transition-all">Ver
+                     class="bg-white text-primary px-10 py-5 rounded-xl font-bold text-base hover:bg-white/90 transition-all">Ver
                      Detalhes</button>
                   <div class="text-sm font-bold uppercase tracking-widest border-b-2 border-accent pb-1">Preços Sob
                      Consulta</div>
@@ -309,13 +276,10 @@
             </div>
          </div>
       </div>
-
    </section>
-
-
    <!-- Testimonial Section -->
-   <section class="w-[95%] m-auto py-24 bg-background-light dark:bg-background-dark border-y border-primary/5">
-      <div class="w-[109%] max-w-4xl mx-auto  text-center">
+   <section class="py-24 bg-background-light dark:bg-background-dark border-y border-primary/5">
+      <div class="max-w-4xl mx-auto px-6 text-center">
          <span class="material-symbols-outlined text-primary text-5xl mb-8 opacity-50">format_quote</span>
          <p
             class="text-2xl md:text-3xl font-light italic leading-relaxed text-[#0c1c1d]/90 dark:text-[#f8fcfc]/90 mb-10">
@@ -328,11 +292,9 @@
          </div>
       </div>
    </section>
-
-
    <!-- Footer / Newsletter -->
-   <footer class="w-[100%] bg-[#F7F5EE] dark:bg-[#0c1114] py-20">
-      <div class="w-[95%] max-w-[1600px] mx-auto lg:px-10">
+   <footer class="bg-[#F7F5EE] dark:bg-[#0c1114] py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center border-b border-primary/10 pb-20">
             <div>
                <h3 class="text-3xl font-black tracking-tight mb-4">Inscreva-se na nossa Gazette</h3>
@@ -341,7 +303,7 @@
             </div>
             <div class="flex gap-4">
                <input
-                  class="flex-1 bg-white dark:bg-background-dark border-none rounded-xl py-4 focus:ring-2 focus:ring-primary"
+                  class="flex-1 bg-white dark:bg-background-dark border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary"
                   placeholder="Seu e-mail profissional" type="email" />
                <button
                   class="bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-primary/90 transition-all uppercase tracking-widest text-sm">Assinar</button>
